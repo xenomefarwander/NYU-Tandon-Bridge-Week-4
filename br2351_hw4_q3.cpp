@@ -35,9 +35,9 @@ int main() {
             cursorPos -= 1;
         }
 
-        // Print 1 for current remainder placeholder
+        // Print 1 for current remainder bit
         cout << 1;
-        // After printing the 1, cursorPos is equal to value of log2 (number of places remaining to the right of the 1)
+        // After printing the 1, cursorPos is equal to value of log2 (number of bits remaining to the right of the 1)
         cursorPos = log2;
 
         // Calculate value of 2^log2, (value to be subtracted from remainder, e.g. 2^6 results in 64)
