@@ -1,7 +1,6 @@
-/* Write two versions of a program that reads a positive
- * integer n, and prints the first n even numbers. a) In
- * the first, use a while loop. b) In the second, use a
- * for loop. */
+/* Question 1
+ * Write two versions of a program that reads a positive integer n, and prints the first n even numbers. a) In
+ * the first, use a while loop. b) In the second, use a for loop. */
 
 #include <iostream>
 using namespace std;
