@@ -1,4 +1,5 @@
-/*In this question we will use a simplified version of the Roman Numerals System to represent
+/* Question 2
+ * In this question we will use a simplified version of the Roman Numerals System to represent
  * positive integers.
  * The digits in this system are I, V, X, L, C, D and M. Each digit corresponds to a decimal value, as
  * showed in the following table:
