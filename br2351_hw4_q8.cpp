@@ -41,18 +41,15 @@ int main() {
         if (userGuess == luckyNum){
             cout << "Congrats! You guessed my number in " << 5 - guessRemaining << " guesses.";
             isWinner = true;
-        }
-        else if (guessRemaining > 0) {
+        } else if (guessRemaining > 0) {
             if (userGuess > luckyNum) {
                 cout << "Wrong! My number is smaller." << endl;
                 rangeMax = userGuess - 1;
-            } 
-            else {
+            } else {
                 cout << "Wrong! My number is bigger." << endl;
                 rangeMin = userGuess + 1;
             }
-        }
-        else
+        } else
             cout << "Out of guesses! My number is " << luckyNum;
 
         cout << endl;
