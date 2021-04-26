@@ -3,7 +3,7 @@
  * between 1 and 100 (inclusive), and have the user try to guess that number.*/
 
 // Bug 1: Should only print line "Out of guesses!" when guessed wrong on 5th try (Not "My number is smaller/bigger"
-// first. (Resolved)
+// first.
 
 #include <iostream>
 #include <cstdlib>
@@ -46,13 +46,14 @@ int main() {
             if (userGuess > luckyNum) {
                 cout << "Wrong! My number is smaller." << endl;
                 rangeMax = userGuess - 1;
-            } else if (userGuess < luckyNum) {
+            } 
+            else {
                 cout << "Wrong! My number is bigger." << endl;
                 rangeMin = userGuess + 1;
             }
         }
         else
-            cout << "Out of guesses! My number is " << luckyNum << endl;
+            cout << "Out of guesses! My number is " << luckyNum;
 
         cout << endl;
     }
