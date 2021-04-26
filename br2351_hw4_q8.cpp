@@ -2,6 +2,9 @@
  * Implement a number guessing game. The program should randomly choose an integer
  * between 1 and 100 (inclusive), and have the user try to guess that number.*/
 
+// Bug 1: Should only print line "Out of guesses!" when guessed wrong on 5th try (Not "My number is smaller/bigger"
+// first. (Resolved)
+
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -35,20 +38,23 @@ int main() {
         guessRemaining -= 1;
 
         // Compares number to winning number, informs user accordingly.
-        if (userGuess > luckyNum) {
-            cout << "Wrong! My number is smaller." << endl;
-            rangeMax = userGuess - 1;
-        } else if (userGuess < luckyNum) {
-            cout << "Wrong! My number is bigger." << endl;
-            rangeMin = userGuess + 1;
-        } else {
+        if (userGuess == luckyNum){
             cout << "Congrats! You guessed my number in " << 5 - guessRemaining << " guesses.";
             isWinner = true;
         }
-        if (!isWinner && guessRemaining == 0)
-            cout << "Out of guesses! My number is " << luckyNum << endl;
+        else if (guessRemaining > 0) {
+            if (userGuess > luckyNum) {
+                cout << "Wrong! My number is smaller." << endl;
+                rangeMax = userGuess - 1;
+            } else if (userGuess < luckyNum) {
+                cout << "Wrong! My number is bigger." << endl;
+                rangeMin = userGuess + 1;
+            }
+        }
         else
-            cout << endl;
+            cout << "Out of guesses! My number is " << luckyNum << endl;
+
+        cout << endl;
     }
 
     return 0;
