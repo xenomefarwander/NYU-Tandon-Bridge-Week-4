@@ -35,6 +35,7 @@ int main() {
         // Calculate value of 2^x (e.g. 2^6 results in 64, the value to be subtracted from remainderCurr)
         for (exponent = log2Curr, powOf2 = 1; exponent > 0; exponent -=1)
             powOf2 *= 2;
+        
         // Reassign remainderCurr for purposes of the next loop iteration (e.g. "76 - 64" = 12)
         remainderCurr %= powOf2;
     }
