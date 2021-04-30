@@ -26,6 +26,7 @@ int main() {
     nRoot = 1 / (double)numOfInts;
     cout << "The geometric mean is: " << pow(sumOfInts, nRoot) << endl;
 
+    cout << endl;
 
     cout << "section b" << endl;
     cout << "Please enter a non-empty sequence of positive integers, each one in a separate line. End "
