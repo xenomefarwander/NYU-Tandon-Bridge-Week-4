@@ -2,9 +2,6 @@
  * Implement a number guessing game. The program should randomly choose an integer
  * between 1 and 100 (inclusive), and have the user try to guess that number.*/
 
-// Bug 1: Should only print line "Out of guesses!" when guessed wrong on 5th try (Not "My number is smaller/bigger"
-// first.
-
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
